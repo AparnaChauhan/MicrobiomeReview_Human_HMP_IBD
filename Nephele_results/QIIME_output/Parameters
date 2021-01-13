@@ -1,0 +1,17 @@
+Nephele Version: 2.5.0
+Run Type: QIIME 16S FASTQ Paired End
+Pipeline Description: HMP_IBD178samples_trial3_Silva99_PICRUSt
+Job ID: 9d8342d27cae
+Pipeline parameters:
+data_type : PE
+job_id : 9d8342d27cae
+map_file : /mnt/EFS/user_uploads/9d8342d27cae/inputs/hmp2_metadata_modified_IBD_Nephele_corrected.txt
+max_bad_run : 3
+max_n : 0
+min_overlap : 10
+otu_strategy : closed
+perc_max_diff : 25
+phred_offset : 33
+phred_quality : 19
+picrust : True
+ref_db : sv99
