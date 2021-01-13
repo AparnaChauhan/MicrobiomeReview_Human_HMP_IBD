@@ -1,0 +1,195 @@
+Logging started at 09:09:29 on 23 Dec 2020
+QIIME version: 1.9.1
+
+qiime_config values:
+pick_otus_reference_seqs_fp	/usr/local/lib/python2.7/dist-packages/qiime_default_reference/gg_13_8_otus/rep_set/97_otus.fasta
+sc_queue	all.q
+pynast_template_alignment_fp	/usr/local/lib/python2.7/dist-packages/qiime_default_reference/gg_13_8_otus/rep_set_aligned/85_otus.pynast.fasta
+cluster_jobs_fp	start_parallel_jobs.py
+assign_taxonomy_reference_seqs_fp	/usr/local/lib/python2.7/dist-packages/qiime_default_reference/gg_13_8_otus/rep_set/97_otus.fasta
+torque_queue	friendlyq
+jobs_to_start	1
+denoiser_min_per_core	50
+assign_taxonomy_id_to_taxonomy_fp	/usr/local/lib/python2.7/dist-packages/qiime_default_reference/gg_13_8_otus/taxonomy/97_otu_taxonomy.txt
+temp_dir	/mnt/EFS/user_uploads/9d8342d27cae/tmp/
+blastall_fp	blastall
+seconds_to_sleep	1
+
+parameter file values:
+make_distance_boxplots:num_permutations	0
+alpha_diversity:metrics	observed_species,chao1,PD_whole_tree,shannon
+summarize_taxa:absolute_abundance	True
+summarize_taxa:level	2,3,4,5,6,7
+parallel:jobs_to_start	16
+
+Input file md5 sums:
+/mnt/EFS/user_uploads/9d8342d27cae/outputs/otus/otu_table.biom: 91deece88a9fb8b03f5be5b82eba380c
+/mnt/EFS/user_uploads/9d8342d27cae/inputs/hmp2_metadata_modified_IBD_Nephele_corrected.txt: 0039d7873dc79e50dc9004dd49d7c296
+/mnt/EFS/dbs/SILVA_99/99_otus.tre: 2192ac14569857dec7bb887ca3c88be5
+
+Executing commands.
+
+# Generate BIOM table summary command 
+biom summarize-table -i /mnt/EFS/user_uploads/9d8342d27cae/outputs/otus/otu_table.biom -o /mnt/EFS/user_uploads/9d8342d27cae/outputs/core_diversity/TreatmentGroup/biom_table_summary.txt 
+
+Stdout:
+
+Stderr:
+
+# Filter low sequence count samples from table (minimum sequence count: 10004) command 
+filter_samples_from_otu_table.py -i /mnt/EFS/user_uploads/9d8342d27cae/outputs/otus/otu_table.biom -o /mnt/EFS/user_uploads/9d8342d27cae/outputs/core_diversity/TreatmentGroup/table_mc10004.biom -n 10004
+
+Stdout:
+
+Stderr:
+/usr/local/lib/python2.7/dist-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+
+# Rarify the OTU table to 10004 sequences/sample command 
+single_rarefaction.py -i /mnt/EFS/user_uploads/9d8342d27cae/outputs/core_diversity/TreatmentGroup/table_mc10004.biom -o /mnt/EFS/user_uploads/9d8342d27cae/outputs/core_diversity/TreatmentGroup/table_even10004.biom -d 10004
+
+Stdout:
+
+Stderr:
+/usr/local/lib/python2.7/dist-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+
+Executing commands.
+
+# Beta Diversity (weighted_unifrac) command 
+parallel_beta_diversity.py -i /mnt/EFS/user_uploads/9d8342d27cae/outputs/core_diversity/TreatmentGroup/table_even10004.biom -o /mnt/EFS/user_uploads/9d8342d27cae/outputs/core_diversity/TreatmentGroup/bdiv_even10004/ --metrics weighted_unifrac -T  -t /mnt/EFS/dbs/SILVA_99/99_otus.tre --jobs_to_start 16
+
+Stdout:
+
+Stderr:
+/usr/local/lib/python2.7/dist-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+
+# Rename distance matrix (weighted_unifrac) command 
+mv /mnt/EFS/user_uploads/9d8342d27cae/outputs/core_diversity/TreatmentGroup/bdiv_even10004//weighted_unifrac_table_even10004.txt /mnt/EFS/user_uploads/9d8342d27cae/outputs/core_diversity/TreatmentGroup/bdiv_even10004//weighted_unifrac_dm.txt
+
+Stdout:
+
+Stderr:
+
+# Principal coordinates (weighted_unifrac) command 
+principal_coordinates.py -i /mnt/EFS/user_uploads/9d8342d27cae/outputs/core_diversity/TreatmentGroup/bdiv_even10004//weighted_unifrac_dm.txt -o /mnt/EFS/user_uploads/9d8342d27cae/outputs/core_diversity/TreatmentGroup/bdiv_even10004//weighted_unifrac_pc.txt 
+
+Stdout:
+
+Stderr:
+/usr/local/lib/python2.7/dist-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+/usr/local/lib/python2.7/dist-packages/skbio/stats/ordination/_principal_coordinate_analysis.py:107: RuntimeWarning: The result contains negative eigenvalues. Please compare their magnitude with the magnitude of some of the largest positive eigenvalues. If the negative ones are smaller, it's probably safe to ignore them, but if they are large in magnitude, the results won't be useful. See the Notes section for more details. The smallest eigenvalue is -0.230609472717 and the largest is 4.36551958418.
+  RuntimeWarning
+
+# Make emperor plots, weighted_unifrac) command 
+make_emperor.py -i /mnt/EFS/user_uploads/9d8342d27cae/outputs/core_diversity/TreatmentGroup/bdiv_even10004//weighted_unifrac_pc.txt -o /mnt/EFS/user_uploads/9d8342d27cae/outputs/core_diversity/TreatmentGroup/bdiv_even10004//weighted_unifrac_emperor_pcoa_plot/ -m /mnt/EFS/user_uploads/9d8342d27cae/inputs/hmp2_metadata_modified_IBD_Nephele_corrected.txt 
+
+Stdout:
+
+Stderr:
+
+# Beta Diversity (unweighted_unifrac) command 
+parallel_beta_diversity.py -i /mnt/EFS/user_uploads/9d8342d27cae/outputs/core_diversity/TreatmentGroup/table_even10004.biom -o /mnt/EFS/user_uploads/9d8342d27cae/outputs/core_diversity/TreatmentGroup/bdiv_even10004/ --metrics unweighted_unifrac -T  -t /mnt/EFS/dbs/SILVA_99/99_otus.tre --jobs_to_start 16
+
+Stdout:
+
+Stderr:
+/usr/local/lib/python2.7/dist-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+
+# Rename distance matrix (unweighted_unifrac) command 
+mv /mnt/EFS/user_uploads/9d8342d27cae/outputs/core_diversity/TreatmentGroup/bdiv_even10004//unweighted_unifrac_table_even10004.txt /mnt/EFS/user_uploads/9d8342d27cae/outputs/core_diversity/TreatmentGroup/bdiv_even10004//unweighted_unifrac_dm.txt
+
+Stdout:
+
+Stderr:
+
+# Principal coordinates (unweighted_unifrac) command 
+principal_coordinates.py -i /mnt/EFS/user_uploads/9d8342d27cae/outputs/core_diversity/TreatmentGroup/bdiv_even10004//unweighted_unifrac_dm.txt -o /mnt/EFS/user_uploads/9d8342d27cae/outputs/core_diversity/TreatmentGroup/bdiv_even10004//unweighted_unifrac_pc.txt 
+
+Stdout:
+
+Stderr:
+/usr/local/lib/python2.7/dist-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+
+# Make emperor plots, unweighted_unifrac) command 
+make_emperor.py -i /mnt/EFS/user_uploads/9d8342d27cae/outputs/core_diversity/TreatmentGroup/bdiv_even10004//unweighted_unifrac_pc.txt -o /mnt/EFS/user_uploads/9d8342d27cae/outputs/core_diversity/TreatmentGroup/bdiv_even10004//unweighted_unifrac_emperor_pcoa_plot/ -m /mnt/EFS/user_uploads/9d8342d27cae/inputs/hmp2_metadata_modified_IBD_Nephele_corrected.txt 
+
+Stdout:
+
+Stderr:
+
+Executing commands.
+
+# Alpha rarefaction command 
+parallel_multiple_rarefactions.py -T -i /mnt/EFS/user_uploads/9d8342d27cae/outputs/core_diversity/TreatmentGroup/table_mc10004.biom -m 10 -x 10004 -s 999 -o /mnt/EFS/user_uploads/9d8342d27cae/outputs/core_diversity/TreatmentGroup/arare_max10004//rarefaction/  --jobs_to_start 16
+
+Stdout:
+
+Stderr:
+/usr/local/lib/python2.7/dist-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+
+# Alpha diversity on rarefied OTU tables command 
+parallel_alpha_diversity.py -T -i /mnt/EFS/user_uploads/9d8342d27cae/outputs/core_diversity/TreatmentGroup/arare_max10004//rarefaction/ -o /mnt/EFS/user_uploads/9d8342d27cae/outputs/core_diversity/TreatmentGroup/arare_max10004//alpha_div/ --metrics observed_species,chao1,PD_whole_tree,shannon -t /mnt/EFS/dbs/SILVA_99/99_otus.tre --jobs_to_start 16
+
+Stdout:
+
+Stderr:
+/usr/local/lib/python2.7/dist-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+
+# Collate alpha command 
+collate_alpha.py -i /mnt/EFS/user_uploads/9d8342d27cae/outputs/core_diversity/TreatmentGroup/arare_max10004//alpha_div/ -o /mnt/EFS/user_uploads/9d8342d27cae/outputs/core_diversity/TreatmentGroup/arare_max10004//alpha_div_collated/ 
+
+Stdout:
+
+Stderr:
+/usr/local/lib/python2.7/dist-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+
+# Removing intermediate files command 
+rm -r /mnt/EFS/user_uploads/9d8342d27cae/outputs/core_diversity/TreatmentGroup/arare_max10004//rarefaction/ /mnt/EFS/user_uploads/9d8342d27cae/outputs/core_diversity/TreatmentGroup/arare_max10004//alpha_div/
+
+Stdout:
+
+Stderr:
+
+# Rarefaction plot: All metrics command 
+make_rarefaction_plots.py -i /mnt/EFS/user_uploads/9d8342d27cae/outputs/core_diversity/TreatmentGroup/arare_max10004//alpha_div_collated/ -m /mnt/EFS/user_uploads/9d8342d27cae/inputs/hmp2_metadata_modified_IBD_Nephele_corrected.txt -o /mnt/EFS/user_uploads/9d8342d27cae/outputs/core_diversity/TreatmentGroup/arare_max10004//alpha_rarefaction_plots/ 
+
+
+
+*** ERROR RAISED DURING STEP: Rarefaction plot: All metrics
+Command run was:
+ make_rarefaction_plots.py -i /mnt/EFS/user_uploads/9d8342d27cae/outputs/core_diversity/TreatmentGroup/arare_max10004//alpha_div_collated/ -m /mnt/EFS/user_uploads/9d8342d27cae/inputs/hmp2_metadata_modified_IBD_Nephele_corrected.txt -o /mnt/EFS/user_uploads/9d8342d27cae/outputs/core_diversity/TreatmentGroup/arare_max10004//alpha_rarefaction_plots/ 
+Command returned exit status: 1
+Stdout:
+
+Stderr
+/usr/local/lib/python2.7/dist-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Traceback (most recent call last):
+  File "/usr/local/bin/make_rarefaction_plots.py", line 229, in <module>
+    main()
+  File "/usr/local/bin/make_rarefaction_plots.py", line 219, in main
+    generate_average_tables=generate_average_tables)
+  File "/usr/local/lib/python2.7/dist-packages/qiime/make_rarefaction_plots.py", line 669, in make_averages
+    metric_name, output_type)
+  File "/usr/local/lib/python2.7/dist-packages/qiime/make_rarefaction_plots.py", line 74, in save_ave_rarefaction_plots
+    plt.savefig(imgpath, format=imagetype, dpi=res)
+  File "/usr/local/lib/python2.7/dist-packages/matplotlib/pyplot.py", line 701, in savefig
+    res = fig.savefig(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/matplotlib/figure.py", line 1834, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/matplotlib/backend_bases.py", line 2267, in print_figure
+    **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/matplotlib/backends/backend_agg.py", line 512, in print_png
+    filename_or_obj = open(filename_or_obj, 'wb')
+IOError: [Errno 2] No such file or directory: '/mnt/EFS/user_uploads/9d8342d27cae/outputs/core_diversity/TreatmentGroup/arare_max10004//alpha_rarefaction_plots/average_plots/PD_whole_treeCRPmg/L.png'
+
+
+Logging stopped at 09:29:24 on 23 Dec 2020
