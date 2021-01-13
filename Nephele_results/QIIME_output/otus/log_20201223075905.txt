@@ -1,0 +1,58 @@
+Logging started at 07:59:05 on 23 Dec 2020
+QIIME version: 1.9.1
+
+qiime_config values:
+pick_otus_reference_seqs_fp	/usr/local/lib/python2.7/dist-packages/qiime_default_reference/gg_13_8_otus/rep_set/97_otus.fasta
+sc_queue	all.q
+pynast_template_alignment_fp	/usr/local/lib/python2.7/dist-packages/qiime_default_reference/gg_13_8_otus/rep_set_aligned/85_otus.pynast.fasta
+cluster_jobs_fp	start_parallel_jobs.py
+assign_taxonomy_reference_seqs_fp	/usr/local/lib/python2.7/dist-packages/qiime_default_reference/gg_13_8_otus/rep_set/97_otus.fasta
+torque_queue	friendlyq
+jobs_to_start	1
+denoiser_min_per_core	50
+assign_taxonomy_id_to_taxonomy_fp	/usr/local/lib/python2.7/dist-packages/qiime_default_reference/gg_13_8_otus/taxonomy/97_otu_taxonomy.txt
+temp_dir	/mnt/EFS/user_uploads/9d8342d27cae/tmp/
+blastall_fp	blastall
+seconds_to_sleep	1
+
+parameter file values:
+assign_taxonomy:sortmerna_db	/mnt/EFS/dbs/SILVA_99/otus_16S
+assign_taxonomy:reference_seqs_fp	/mnt/EFS/dbs/SILVA_99/otus_16S.fasta
+assign_taxonomy:id_to_taxonomy_fp	/mnt/EFS/dbs/SILVA_99/majority_taxonomy_7_levels.txt
+assign_taxonomy:assignment_method	sortmerna
+make_otu_table:taxonomy	/mnt/EFS/dbs/SILVA_99/majority_taxonomy_7_levels.txt
+pick_otus:sortmerna_db	/mnt/EFS/dbs/SILVA_99/otus_16S
+pick_otus:refseqs_fp	/mnt/EFS/dbs/SILVA_99/otus_16S.fasta
+pick_otus:otu_picking_method	sortmerna
+pick_otus:enable_rev_strand_match	True
+parallel:jobs_to_start	1
+
+Input file md5 sums:
+/mnt/EFS/user_uploads/9d8342d27cae/outputs/split_lib_out/seqs.fna: f6fc5636632b59737ed08e994476be5f
+/mnt/EFS/dbs/SILVA_99/otus_16S.fasta: de4e31e4d6a42a30581c78ddfb3369e6
+/usr/local/lib/python2.7/dist-packages/qiime_default_reference/gg_13_8_otus/taxonomy/97_otu_taxonomy.txt: 56ef15dccf2e931ec173f4f977ed649b
+
+Forcing --suppress_new_clusters as this is closed-reference OTU picking.
+
+Executing commands.
+
+# Pick OTUs command 
+pick_otus.py -i /mnt/EFS/user_uploads/9d8342d27cae/outputs/split_lib_out/seqs.fna -o /mnt/EFS/user_uploads/9d8342d27cae/outputs/otus/sortmerna_picked_otus -r /mnt/EFS/dbs/SILVA_99/otus_16S.fasta -m sortmerna --sortmerna_db /mnt/EFS/dbs/SILVA_99/otus_16S --refseqs_fp /mnt/EFS/dbs/SILVA_99/otus_16S.fasta --otu_picking_method sortmerna --enable_rev_strand_match --suppress_new_clusters
+
+Stdout:
+
+Stderr:
+/usr/local/lib/python2.7/dist-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+
+# Make OTU table command 
+make_otu_table.py -i /mnt/EFS/user_uploads/9d8342d27cae/outputs/otus/sortmerna_picked_otus/seqs_otus.txt -t /usr/local/lib/python2.7/dist-packages/qiime_default_reference/gg_13_8_otus/taxonomy/97_otu_taxonomy.txt -o /mnt/EFS/user_uploads/9d8342d27cae/outputs/otus/otu_table.biom --taxonomy /mnt/EFS/dbs/SILVA_99/majority_taxonomy_7_levels.txt
+
+Stdout:
+
+Stderr:
+/usr/local/lib/python2.7/dist-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+
+
+Logging stopped at 09:09:23 on 23 Dec 2020

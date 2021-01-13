@@ -1,0 +1,5 @@
+make_distance_boxplots:num_permutations	0
+summarize_taxa:level	2,3,4,5,6,7
+summarize_taxa:absolute_abundance	True
+make_distance_boxplots:num_permutations	0
+alpha_diversity:metrics	observed_species,chao1,PD_whole_tree,shannon

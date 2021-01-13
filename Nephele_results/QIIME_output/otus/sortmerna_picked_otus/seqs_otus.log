@@ -1,0 +1,14 @@
+OtuPicker parameters:
+best:1
+blast:False
+coverage:0.97
+max_e_value:1.0
+max_pos:10000
+prefilter_identical_sequences:True
+similarity:0.97
+threads:1
+SortMeRNA database: /mnt/EFS/dbs/SILVA_99/otus_16S
+Num OTUs: 9897
+Num failures: 145561
+Result path: /mnt/EFS/user_uploads/9d8342d27cae/outputs/otus/sortmerna_picked_otus/seqs_otus.txt
+
