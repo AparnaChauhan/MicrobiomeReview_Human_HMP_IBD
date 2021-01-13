@@ -1,0 +1,23 @@
+Parameters -
+
+Nephele Version: 2.5.0
+Run Type: DADA2 16S FASTQ Paired End
+Pipeline Description: HMP_IBD178samples_trial1_DADA2_rdp_SILVAv132
+Job ID: 857694174794
+Pipeline parameters:
+chimera : True
+data_type : PE
+ion_torrent : False
+job_id : 857694174794
+just_concatenate : False
+map_file : /mnt/EFS/user_uploads/857694174794/inputs/hmp2_metadata_modified_IBD_Nephele_corrected.txt
+maxEE : 5
+maxMismatch : 0
+ref_db : sv99
+taxmethod : rdp
+trim_overhang : False
+trimleft_fwd : 20
+trimleft_rev : 20
+truncLen_fwd : 0
+truncLen_rev : 0
+truncQ : 4
