@@ -1,0 +1,62 @@
+Logging started at 15:18:59 on 20 Dec 2020
+QIIME version: 1.9.1
+
+qiime_config values:
+pick_otus_reference_seqs_fp	/usr/local/lib/python2.7/dist-packages/qiime_default_reference/gg_13_8_otus/rep_set/97_otus.fasta
+sc_queue	all.q
+pynast_template_alignment_fp	/usr/local/lib/python2.7/dist-packages/qiime_default_reference/gg_13_8_otus/rep_set_aligned/85_otus.pynast.fasta
+cluster_jobs_fp	start_parallel_jobs.py
+assign_taxonomy_reference_seqs_fp	/usr/local/lib/python2.7/dist-packages/qiime_default_reference/gg_13_8_otus/rep_set/97_otus.fasta
+torque_queue	friendlyq
+jobs_to_start	1
+denoiser_min_per_core	50
+assign_taxonomy_id_to_taxonomy_fp	/usr/local/lib/python2.7/dist-packages/qiime_default_reference/gg_13_8_otus/taxonomy/97_otu_taxonomy.txt
+temp_dir	/mnt/EFS/user_uploads/163a091d878b/tmp/
+blastall_fp	blastall
+seconds_to_sleep	1
+
+parameter file values:
+alpha_diversity:metrics	observed_species,chao1,PD_whole_tree,shannon
+assign_taxonomy:sortmerna_db	/mnt/EFS/dbs/Greengenes_99/99_otus
+assign_taxonomy:reference_seqs_fp	/mnt/EFS/dbs/Greengenes_99/99_otus.fasta
+assign_taxonomy:id_to_taxonomy_fp	/mnt/EFS/dbs/Greengenes_99/99_otu_taxonomy.txt
+assign_taxonomy:assignment_method	sortmerna
+summarize_taxa:absolute_abundance	True
+summarize_taxa:level	2,3,4,5,6,7
+make_otu_table:taxonomy	/mnt/EFS/dbs/Greengenes_99/99_otu_taxonomy.txt
+make_distance_boxplots:num_permutations	0
+pick_otus:sortmerna_db	/mnt/EFS/dbs/Greengenes_99/99_otus
+pick_otus:refseqs_fp	/mnt/EFS/dbs/Greengenes_99/99_otus.fasta
+pick_otus:otu_picking_method	sortmerna
+pick_otus:enable_rev_strand_match	True
+parallel:jobs_to_start	1
+
+Input file md5 sums:
+/mnt/EFS/user_uploads/163a091d878b/outputs/split_lib_out/seqs.fna: f6fc5636632b59737ed08e994476be5f
+/mnt/EFS/dbs/Greengenes_99/99_otus.fasta: e5b6dd84844118591f3d9e9b6a77a846
+/usr/local/lib/python2.7/dist-packages/qiime_default_reference/gg_13_8_otus/taxonomy/97_otu_taxonomy.txt: 56ef15dccf2e931ec173f4f977ed649b
+
+Forcing --suppress_new_clusters as this is closed-reference OTU picking.
+
+Executing commands.
+
+# Pick OTUs command 
+pick_otus.py -i /mnt/EFS/user_uploads/163a091d878b/outputs/split_lib_out/seqs.fna -o /mnt/EFS/user_uploads/163a091d878b/outputs/otus_picrust/sortmerna_picked_otus -r /mnt/EFS/dbs/Greengenes_99/99_otus.fasta -m sortmerna --sortmerna_db /mnt/EFS/dbs/Greengenes_99/99_otus --refseqs_fp /mnt/EFS/dbs/Greengenes_99/99_otus.fasta --otu_picking_method sortmerna --enable_rev_strand_match --suppress_new_clusters
+
+Stdout:
+
+Stderr:
+/usr/local/lib/python2.7/dist-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+
+# Make OTU table command 
+make_otu_table.py -i /mnt/EFS/user_uploads/163a091d878b/outputs/otus_picrust/sortmerna_picked_otus/seqs_otus.txt -t /usr/local/lib/python2.7/dist-packages/qiime_default_reference/gg_13_8_otus/taxonomy/97_otu_taxonomy.txt -o /mnt/EFS/user_uploads/163a091d878b/outputs/otus_picrust/otu_table.biom --taxonomy /mnt/EFS/dbs/Greengenes_99/99_otu_taxonomy.txt
+
+Stdout:
+
+Stderr:
+/usr/local/lib/python2.7/dist-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+
+
+Logging stopped at 15:43:52 on 20 Dec 2020

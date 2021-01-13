@@ -1,0 +1,49 @@
+Logging started at 15:46:49 on 20 Dec 2020
+QIIME version: 1.9.1
+
+qiime_config values:
+pick_otus_reference_seqs_fp	/usr/local/lib/python2.7/dist-packages/qiime_default_reference/gg_13_8_otus/rep_set/97_otus.fasta
+sc_queue	all.q
+pynast_template_alignment_fp	/usr/local/lib/python2.7/dist-packages/qiime_default_reference/gg_13_8_otus/rep_set_aligned/85_otus.pynast.fasta
+cluster_jobs_fp	start_parallel_jobs.py
+assign_taxonomy_reference_seqs_fp	/usr/local/lib/python2.7/dist-packages/qiime_default_reference/gg_13_8_otus/rep_set/97_otus.fasta
+torque_queue	friendlyq
+jobs_to_start	1
+denoiser_min_per_core	50
+assign_taxonomy_id_to_taxonomy_fp	/usr/local/lib/python2.7/dist-packages/qiime_default_reference/gg_13_8_otus/taxonomy/97_otu_taxonomy.txt
+temp_dir	/mnt/EFS/user_uploads/163a091d878b/tmp/
+blastall_fp	blastall
+seconds_to_sleep	1
+
+parameter file values:
+summarize_taxa:absolute_abundance	True
+summarize_taxa:md_identifier	"KEGG_Pathways"
+summarize_taxa:level	2
+
+Input file md5 sums:
+/mnt/EFS/user_uploads/163a091d878b/outputs/PICRUSt_data/predicted_metagenomes.L2.biom: 9f73690a10c122ead2c975c2e03c2329
+
+Executing commands.
+
+# Summarize Taxonomy command 
+summarize_taxa.py -i /mnt/EFS/user_uploads/163a091d878b/outputs/PICRUSt_data/predicted_metagenomes.L2.biom -o /mnt/EFS/user_uploads/163a091d878b/outputs/PICRUSt_data/picrust_at_lvl2 --absolute_abundance --md_identifier "KEGG_Pathways" --level 2
+
+Stdout:
+
+Stderr:
+/usr/local/lib/python2.7/dist-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+
+# Plot Taxonomy Summary command 
+plot_taxa_summary.py -i /mnt/EFS/user_uploads/163a091d878b/outputs/PICRUSt_data/picrust_at_lvl2/predicted_metagenomes.L2_L2.txt -o /mnt/EFS/user_uploads/163a091d878b/outputs/PICRUSt_data/picrust_at_lvl2/taxa_summary_plots/ 
+
+Stdout:
+
+Stderr:
+/usr/local/lib/python2.7/dist-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+/usr/local/lib/python2.7/dist-packages/matplotlib/cbook/deprecation.py:106: MatplotlibDeprecationWarning: The axisbg attribute was deprecated in version 2.0. Use facecolor instead.
+  warnings.warn(message, mplDeprecation, stacklevel=1)
+
+
+Logging stopped at 15:47:06 on 20 Dec 2020

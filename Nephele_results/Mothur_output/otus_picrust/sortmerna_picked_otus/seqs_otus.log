@@ -1,0 +1,14 @@
+OtuPicker parameters:
+best:1
+blast:False
+coverage:0.97
+max_e_value:1.0
+max_pos:10000
+prefilter_identical_sequences:True
+similarity:0.97
+threads:1
+SortMeRNA database: /mnt/EFS/dbs/Greengenes_99/99_otus
+Num OTUs: 8095
+Num failures: 170137
+Result path: /mnt/EFS/user_uploads/163a091d878b/outputs/otus_picrust/sortmerna_picked_otus/seqs_otus.txt
+
