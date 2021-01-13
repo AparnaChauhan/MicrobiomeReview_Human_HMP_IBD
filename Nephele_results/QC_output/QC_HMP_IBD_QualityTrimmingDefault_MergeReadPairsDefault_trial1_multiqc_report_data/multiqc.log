@@ -1,0 +1,479 @@
+[2020-12-23 13:20:14,276] multiqc                                            [DEBUG  ]  No MultiQC config found: /home/admin/.conda/envs/qiime2-2018.6/lib/python3.5/site-packages/multiqc-1.8.dev0-py3.5.egg/multiqc_config.yaml
+[2020-12-23 13:20:14,276] multiqc                                            [DEBUG  ]  No MultiQC config found: /root/.multiqc_config.yaml
+[2020-12-23 13:20:14,276] multiqc                                            [DEBUG  ]  No MultiQC config found: multiqc_config.yaml
+[2020-12-23 13:20:14,278] multiqc                                            [DEBUG  ]  Loading config settings from: /usr/local/src/nephele2/pipelines/QC_reads/multiqc_config.yaml
+[2020-12-23 13:20:14,278] multiqc                                            [DEBUG  ]  New config 'read_count_prefix': 
+[2020-12-23 13:20:14,278] multiqc                                            [DEBUG  ]  New config 'top_modules': ['fastqc', 'cutadapt', 'trimmomatic']
+[2020-12-23 13:20:14,279] multiqc                                            [DEBUG  ]  New config 'read_count_desc': reads
+[2020-12-23 13:20:14,279] multiqc                                            [DEBUG  ]  New config 'flash': {'use_output_name': True}
+[2020-12-23 13:20:14,279] multiqc                                            [DEBUG  ]  Added to filename patterns: {'flash/hist': {'fn': '*.hist'}}
+[2020-12-23 13:20:14,279] multiqc                                            [DEBUG  ]  New config 'read_count_multiplier': 1
+[2020-12-23 13:20:14,279] multiqc                                            [DEBUG  ]  Command used: /home/admin/.conda/envs/qiime2-2018.6/bin/multiqc -c /usr/local/src/nephele2/pipelines/QC_reads/multiqc_config.yaml --title QC_HMP_IBD_QualityTrimmingDefault_MergeReadPairsDefault_trial1 -o /mnt/EFS/user_uploads/85969ccb2135/outputs/ /mnt/EFS/user_uploads/85969ccb2135/outputs/multiqc_input/
+[2020-12-23 13:20:15,001] multiqc                                            [WARNING]  MultiQC Version v1.9 now available!
+[2020-12-23 13:20:15,001] multiqc                                            [INFO   ]  This is MultiQC v1.8.dev0
+[2020-12-23 13:20:15,001] multiqc                                            [DEBUG  ]  Command     : /home/admin/.conda/envs/qiime2-2018.6/bin/multiqc -c /usr/local/src/nephele2/pipelines/QC_reads/multiqc_config.yaml --title QC_HMP_IBD_QualityTrimmingDefault_MergeReadPairsDefault_trial1 -o /mnt/EFS/user_uploads/85969ccb2135/outputs/ /mnt/EFS/user_uploads/85969ccb2135/outputs/multiqc_input/
+[2020-12-23 13:20:15,001] multiqc                                            [DEBUG  ]  Working dir : /usr/local/src
+[2020-12-23 13:20:15,001] multiqc                                            [INFO   ]  Template    : default
+[2020-12-23 13:20:15,001] multiqc                                            [INFO   ]  Report title: QC_HMP_IBD_QualityTrimmingDefault_MergeReadPairsDefault_trial1
+[2020-12-23 13:20:15,001] multiqc                                            [INFO   ]  Searching '/mnt/EFS/user_uploads/85969ccb2135/outputs/multiqc_input/'
+[2020-12-23 13:20:15,002] multiqc                                            [DEBUG  ]  Analysing modules: fastqc, cutadapt, trimmomatic, custom_content, conpair, peddy, methylQA, phantompeakqualtools, qualimap, preseq, quast, qorts, rna_seqc, rsem, rseqc, busco, goleft_indexcov, disambiguate, supernova, deeptools, sargasso, verifybamid, mirtrace, happy, homer, macs2, theta2, snpeff, gatk, htseq, bcftools, featureCounts, dedup, damageprofiler, biobambam2, picard, prokka, samblaster, samtools, bamtools, jellyfish, vcftools, longranger, stacks, bbmap, bismark, biscuit, hicexplorer, hicup, hicpro, salmon, kallisto, slamdunk, star, hisat2, tophat, bowtie2, bowtie1, kat, leehom, adapterRemoval, clipandmerge, flexbar, skewer, sortmerna, biobloomtools, fastq_screen, afterqc, fastp, minionqc, clusterflow, bcl2fastq, interop, flash
+[2020-12-23 13:20:15,007] multiqc                                            [DEBUG  ]  Using temporary directory for creating report: /mnt/EFS/user_uploads/85969ccb2135/tmp/tmphlwmq0hh
+[2020-12-23 13:20:15,457] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206725_R2_fastqc.html
+[2020-12-23 13:20:15,467] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206563_R2_fastqc.html
+[2020-12-23 13:20:15,468] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206618_R1_fastqc.html
+[2020-12-23 13:20:15,468] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206644_R2_fastqc.html
+[2020-12-23 13:20:15,575] multiqc                                            [DEBUG  ]  Ignoring because exceeded search pattern filesize limit: logfile.txt
+[2020-12-23 13:20:15,690] multiqc                                            [DEBUG  ]  Ignoring because exceeded search pattern filesize limit: logfile.txt
+[2020-12-23 13:20:15,699] multiqc                                            [DEBUG  ]  Ignoring because exceeded search pattern filesize limit: logfile.txt
+[2020-12-23 13:20:15,699] multiqc                                            [DEBUG  ]  Ignoring because exceeded search pattern filesize limit: logfile.txt
+[2020-12-23 13:20:15,708] multiqc                                            [DEBUG  ]  Ignoring because exceeded search pattern filesize limit: logfile.txt
+[2020-12-23 13:20:15,708] multiqc                                            [DEBUG  ]  Ignoring because exceeded search pattern filesize limit: logfile.txt
+[2020-12-23 13:20:16,274] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215077_R2_fastqc.html
+[2020-12-23 13:20:16,274] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206761_R2_fastqc.html
+[2020-12-23 13:20:16,277] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206608_R2_fastqc.html
+[2020-12-23 13:20:16,278] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206743_R2_fastqc.html
+[2020-12-23 13:20:16,278] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206636_R1_fastqc.html
+[2020-12-23 13:20:16,282] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206753_R1_fastqc.html
+[2020-12-23 13:20:16,282] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206672_R1_fastqc.html
+[2020-12-23 13:20:16,282] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206626_R2_fastqc.html
+[2020-12-23 13:20:16,288] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206627_R1_fastqc.html
+[2020-12-23 13:20:16,290] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206708_R1_fastqc.html
+[2020-12-23 13:20:16,290] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206572_R2_fastqc.html
+[2020-12-23 13:20:16,290] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206734_R2_fastqc.html
+[2020-12-23 13:20:16,296] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206770_R2_fastqc.html
+[2020-12-23 13:20:16,296] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206536_R2_fastqc.html
+[2020-12-23 13:20:16,296] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206617_R2_fastqc.html
+[2020-12-23 13:20:16,297] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206671_R2_fastqc.html
+[2020-12-23 13:20:16,297] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206645_R1_fastqc.html
+[2020-12-23 13:20:16,297] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206564_R1_fastqc.html
+[2020-12-23 13:20:16,298] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206752_R2_fastqc.html
+[2020-12-23 13:20:16,298] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206726_R1_fastqc.html
+[2020-12-23 13:20:16,306] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206681_R1_fastqc.html
+[2020-12-23 13:20:16,308] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206762_R1_fastqc.html
+[2020-12-23 13:20:16,311] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206609_R1_fastqc.html
+[2020-12-23 13:20:16,312] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206635_R2_fastqc.html
+[2020-12-23 13:20:16,313] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219675_R2_fastqc.html
+[2020-12-23 13:20:16,316] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206700_R1_fastqc.html
+[2020-12-23 13:20:16,318] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.222170_R2_fastqc.html
+[2020-12-23 13:20:16,318] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206769_R2_fastqc.html
+[2020-12-23 13:20:16,319] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.224330_R2_fastqc.html
+[2020-12-23 13:20:16,319] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219693_R2_fastqc.html
+[2020-12-23 13:20:16,320] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219657_R2_fastqc.html
+[2020-12-23 13:20:16,321] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215061_R1_fastqc.html
+[2020-12-23 13:20:16,323] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.214995_R2_fastqc.html
+[2020-12-23 13:20:16,329] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219658_R1_fastqc.html
+[2020-12-23 13:20:16,333] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215007_R1_fastqc.html
+[2020-12-23 13:20:16,333] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219676_R1_fastqc.html
+[2020-12-23 13:20:16,338] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.222171_R1_fastqc.html
+[2020-12-23 13:20:16,339] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206739_R1_fastqc.html
+[2020-12-23 13:20:16,339] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206658_R1_fastqc.html
+[2020-12-23 13:20:16,339] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206684_R2_fastqc.html
+[2020-12-23 13:20:16,345] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219645_R1_fastqc.html
+[2020-12-23 13:20:16,346] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206648_R2_fastqc.html
+[2020-12-23 13:20:16,349] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206729_R2_fastqc.html
+[2020-12-23 13:20:16,350] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206757_R1_fastqc.html
+[2020-12-23 13:20:16,350] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206676_R1_fastqc.html
+[2020-12-23 13:20:16,350] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219653_R2_fastqc.html
+[2020-12-23 13:20:16,354] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206747_R2_fastqc.html
+[2020-12-23 13:20:16,356] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206667_R1_fastqc.html
+[2020-12-23 13:20:16,361] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219644_R2_fastqc.html
+[2020-12-23 13:20:16,362] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206738_R2_fastqc.html
+[2020-12-23 13:20:16,364] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206657_R2_fastqc.html
+[2020-12-23 13:20:16,364] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219654_R1_fastqc.html
+[2020-12-23 13:20:16,365] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206766_R1_fastqc.html
+[2020-12-23 13:20:16,368] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206756_R2_fastqc.html
+[2020-12-23 13:20:16,370] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215003_R1_fastqc.html
+[2020-12-23 13:20:16,371] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206675_R2_fastqc.html
+[2020-12-23 13:20:16,374] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.224326_R1_fastqc.html
+[2020-12-23 13:20:16,377] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206740_R1_fastqc.html
+[2020-12-23 13:20:16,379] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206623_R1_fastqc.html
+[2020-12-23 13:20:16,382] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206704_R1_fastqc.html
+[2020-12-23 13:20:16,382] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206730_R2_fastqc.html
+[2020-12-23 13:20:16,382] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215056_R1_fastqc.html
+[2020-12-23 13:20:16,388] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206605_R1_fastqc.html
+[2020-12-23 13:20:16,388] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206712_R2_fastqc.html
+[2020-12-23 13:20:16,394] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215074_R1_fastqc.html
+[2020-12-23 13:20:16,395] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206703_R2_fastqc.html
+[2020-12-23 13:20:16,395] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206622_R2_fastqc.html
+[2020-12-23 13:20:16,396] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215055_R2_fastqc.html
+[2020-12-23 13:20:16,396] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206713_R1_fastqc.html
+[2020-12-23 13:20:16,399] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.224325_R2_fastqc.html
+[2020-12-23 13:20:16,399] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206721_R2_fastqc.html
+[2020-12-23 13:20:16,401] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206614_R1_fastqc.html
+[2020-12-23 13:20:16,406] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206731_R1_fastqc.html
+[2020-12-23 13:20:16,408] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206604_R2_fastqc.html
+[2020-12-23 13:20:16,412] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206719_R1_fastqc.html
+[2020-12-23 13:20:16,415] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206755_R1_fastqc.html
+[2020-12-23 13:20:16,418] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.224844_R2_fastqc.html
+[2020-12-23 13:20:16,418] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206628_R2_fastqc.html
+[2020-12-23 13:20:16,418] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219651_R2_fastqc.html
+[2020-12-23 13:20:16,419] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206709_R2_fastqc.html
+[2020-12-23 13:20:16,419] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206547_R2_fastqc.html
+[2020-12-23 13:20:16,421] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206656_R1_fastqc.html
+[2020-12-23 13:20:16,421] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215010_R1_fastqc.html
+[2020-12-23 13:20:16,421] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206682_R2_fastqc.html
+[2020-12-23 13:20:16,422] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219633_R2_fastqc.html
+[2020-12-23 13:20:16,426] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219643_R1_fastqc.html
+[2020-12-23 13:20:16,426] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206646_R2_fastqc.html
+[2020-12-23 13:20:16,427] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206727_R2_fastqc.html
+[2020-12-23 13:20:16,427] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206673_R2_fastqc.html
+[2020-12-23 13:20:16,429] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206647_R1_fastqc.html
+[2020-12-23 13:20:16,429] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219670_R1_fastqc.html
+[2020-12-23 13:20:16,429] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206754_R2_fastqc.html
+[2020-12-23 13:20:16,429] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206728_R1_fastqc.html
+[2020-12-23 13:20:16,433] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206683_R1_fastqc.html
+[2020-12-23 13:20:16,436] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206718_R2_fastqc.html
+[2020-12-23 13:20:16,436] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219634_R1_fastqc.html
+[2020-12-23 13:20:16,440] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206746_R1_fastqc.html
+[2020-12-23 13:20:16,441] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206538_R2_fastqc.html
+[2020-12-23 13:20:16,442] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206619_R2_fastqc.html
+[2020-12-23 13:20:16,445] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.224845_R1_fastqc.html
+[2020-12-23 13:20:16,447] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206548_R1_fastqc.html
+[2020-12-23 13:20:16,447] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206655_R2_fastqc.html
+[2020-12-23 13:20:16,449] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219652_R1_fastqc.html
+[2020-12-23 13:20:16,449] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206629_R1_fastqc.html
+[2020-12-23 13:20:16,453] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219669_R1_fastqc.html
+[2020-12-23 13:20:16,453] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206720_R1_fastqc.html
+[2020-12-23 13:20:16,453] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219659_R2_fastqc.html
+[2020-12-23 13:20:16,454] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206603_R1_fastqc.html
+[2020-12-23 13:20:16,455] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206710_R2_fastqc.html
+[2020-12-23 13:20:16,457] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215062_R2_fastqc.html
+[2020-12-23 13:20:16,460] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.224324_R1_fastqc.html
+[2020-12-23 13:20:16,462] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206621_R1_fastqc.html
+[2020-12-23 13:20:16,462] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215008_R2_fastqc.html
+[2020-12-23 13:20:16,462] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206702_R1_fastqc.html
+[2020-12-23 13:20:16,463] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215080_R2_fastqc.html
+[2020-12-23 13:20:16,470] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215009_R1_fastqc.html
+[2020-12-23 13:20:16,472] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219668_R2_fastqc.html
+[2020-12-23 13:20:16,474] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206701_R2_fastqc.html
+[2020-12-23 13:20:16,475] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206620_R2_fastqc.html
+[2020-12-23 13:20:16,475] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206711_R1_fastqc.html
+[2020-12-23 13:20:16,477] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206630_R1_fastqc.html
+[2020-12-23 13:20:16,478] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.224323_R2_fastqc.html
+[2020-12-23 13:20:16,479] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206678_R1_fastqc.html
+[2020-12-23 13:20:16,479] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219655_R2_fastqc.html
+[2020-12-23 13:20:16,482] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219691_R2_fastqc.html
+[2020-12-23 13:20:16,482] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206668_R2_fastqc.html
+[2020-12-23 13:20:16,485] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215050_R1_fastqc.html
+[2020-12-23 13:20:16,485] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215004_R2_fastqc.html
+[2020-12-23 13:20:16,485] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206569_R2_fastqc.html
+[2020-12-23 13:20:16,485] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.214994_R1_fastqc.html
+[2020-12-23 13:20:16,486] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219637_R2_fastqc.html
+[2020-12-23 13:20:16,488] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206767_R2_fastqc.html
+[2020-12-23 13:20:16,490] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206768_R1_fastqc.html
+[2020-12-23 13:20:16,491] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219638_R1_fastqc.html
+[2020-12-23 13:20:16,494] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206758_R2_fastqc.html
+[2020-12-23 13:20:16,494] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206677_R2_fastqc.html
+[2020-12-23 13:20:16,496] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206659_R2_fastqc.html
+[2020-12-23 13:20:16,496] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219656_R1_fastqc.html
+[2020-12-23 13:20:16,499] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219646_R2_fastqc.html
+[2020-12-23 13:20:16,500] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206695_R2_fastqc.html
+[2020-12-23 13:20:16,501] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215023_R1_fastqc.html
+[2020-12-23 13:20:16,501] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219692_R1_fastqc.html
+[2020-12-23 13:20:16,501] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206669_R1_fastqc.html
+[2020-12-23 13:20:16,509] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206643_R1_fastqc.html
+[2020-12-23 13:20:16,509] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206562_R1_fastqc.html
+[2020-12-23 13:20:16,509] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206750_R2_fastqc.html
+[2020-12-23 13:20:16,509] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206724_R1_fastqc.html
+[2020-12-23 13:20:16,511] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215076_R1_fastqc.html
+[2020-12-23 13:20:16,513] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206625_R1_fastqc.html
+[2020-12-23 13:20:16,515] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206570_R2_fastqc.html
+[2020-12-23 13:20:16,517] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206732_R2_fastqc.html
+[2020-12-23 13:20:16,517] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215058_R1_fastqc.html
+[2020-12-23 13:20:16,518] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215084_R2_fastqc.html
+[2020-12-23 13:20:16,520] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215048_R2_fastqc.html
+[2020-12-23 13:20:16,520] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206742_R1_fastqc.html
+[2020-12-23 13:20:16,521] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206534_R2_fastqc.html
+[2020-12-23 13:20:16,521] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.224328_R1_fastqc.html
+[2020-12-23 13:20:16,523] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206615_R2_fastqc.html
+[2020-12-23 13:20:16,525] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206723_R2_fastqc.html
+[2020-12-23 13:20:16,525] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206561_R2_fastqc.html
+[2020-12-23 13:20:16,526] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206616_R1_fastqc.html
+[2020-12-23 13:20:16,529] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215049_R1_fastqc.html
+[2020-12-23 13:20:16,529] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215075_R2_fastqc.html
+[2020-12-23 13:20:16,529] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206571_R1_fastqc.html
+[2020-12-23 13:20:16,529] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206733_R1_fastqc.html
+[2020-12-23 13:20:16,534] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215085_R1_fastqc.html
+[2020-12-23 13:20:16,536] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206741_R2_fastqc.html
+[2020-12-23 13:20:16,539] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206660_R2_fastqc.html
+[2020-12-23 13:20:16,541] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.224327_R2_fastqc.html
+[2020-12-23 13:20:16,541] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215067_R1_fastqc.html
+[2020-12-23 13:20:16,542] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206751_R1_fastqc.html
+[2020-12-23 13:20:16,542] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215057_R2_fastqc.html
+[2020-12-23 13:20:16,543] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206670_R1_fastqc.html
+[2020-12-23 13:20:16,545] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206624_R2_fastqc.html
+[2020-12-23 13:20:16,547] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206628_R1_fastqc.html
+[2020-12-23 13:20:16,547] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219651_R1_fastqc.html
+[2020-12-23 13:20:16,547] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206547_R1_fastqc.html
+[2020-12-23 13:20:16,548] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206709_R1_fastqc.html
+[2020-12-23 13:20:16,548] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.224844_R1_fastqc.html
+[2020-12-23 13:20:16,556] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206618_R2_fastqc.html
+[2020-12-23 13:20:16,557] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206646_R1_fastqc.html
+[2020-12-23 13:20:16,557] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206672_R2_fastqc.html
+[2020-12-23 13:20:16,557] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206727_R1_fastqc.html
+[2020-12-23 13:20:16,557] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206753_R2_fastqc.html
+[2020-12-23 13:20:16,562] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206682_R1_fastqc.html
+[2020-12-23 13:20:16,564] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206636_R2_fastqc.html
+[2020-12-23 13:20:16,565] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219633_R1_fastqc.html
+[2020-12-23 13:20:16,565] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206718_R1_fastqc.html
+[2020-12-23 13:20:16,572] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206754_R1_fastqc.html
+[2020-12-23 13:20:16,575] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206673_R1_fastqc.html
+[2020-12-23 13:20:16,576] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206627_R2_fastqc.html
+[2020-12-23 13:20:16,578] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206708_R2_fastqc.html
+[2020-12-23 13:20:16,579] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206762_R2_fastqc.html
+[2020-12-23 13:20:16,582] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206681_R2_fastqc.html
+[2020-12-23 13:20:16,583] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206655_R1_fastqc.html
+[2020-12-23 13:20:16,583] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206609_R2_fastqc.html
+[2020-12-23 13:20:16,589] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206645_R2_fastqc.html
+[2020-12-23 13:20:16,590] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206619_R1_fastqc.html
+[2020-12-23 13:20:16,591] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206538_R1_fastqc.html
+[2020-12-23 13:20:16,591] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206726_R2_fastqc.html
+[2020-12-23 13:20:16,591] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206564_R2_fastqc.html
+[2020-12-23 13:20:16,594] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215062_R1_fastqc.html
+[2020-12-23 13:20:16,594] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206710_R1_fastqc.html
+[2020-12-23 13:20:16,595] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219659_R1_fastqc.html
+[2020-12-23 13:20:16,597] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206700_R2_fastqc.html
+[2020-12-23 13:20:16,601] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215080_R1_fastqc.html
+[2020-12-23 13:20:16,602] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215008_R1_fastqc.html
+[2020-12-23 13:20:16,605] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219668_R1_fastqc.html
+[2020-12-23 13:20:16,609] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219658_R2_fastqc.html
+[2020-12-23 13:20:16,611] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215061_R2_fastqc.html
+[2020-12-23 13:20:16,613] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.224323_R1_fastqc.html
+[2020-12-23 13:20:16,613] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.222171_R2_fastqc.html
+[2020-12-23 13:20:16,613] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219676_R2_fastqc.html
+[2020-12-23 13:20:16,614] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215007_R2_fastqc.html
+[2020-12-23 13:20:16,614] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206620_R1_fastqc.html
+[2020-12-23 13:20:16,617] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206701_R1_fastqc.html
+[2020-12-23 13:20:16,618] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219691_R1_fastqc.html
+[2020-12-23 13:20:16,618] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206668_R1_fastqc.html
+[2020-12-23 13:20:16,621] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219645_R2_fastqc.html
+[2020-12-23 13:20:16,624] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206739_R2_fastqc.html
+[2020-12-23 13:20:16,626] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219655_R1_fastqc.html
+[2020-12-23 13:20:16,626] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206658_R2_fastqc.html
+[2020-12-23 13:20:16,627] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206767_R1_fastqc.html
+[2020-12-23 13:20:16,631] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219637_R1_fastqc.html
+[2020-12-23 13:20:16,633] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206569_R1_fastqc.html
+[2020-12-23 13:20:16,633] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206757_R2_fastqc.html
+[2020-12-23 13:20:16,633] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206676_R2_fastqc.html
+[2020-12-23 13:20:16,633] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215004_R1_fastqc.html
+[2020-12-23 13:20:16,633] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206758_R1_fastqc.html
+[2020-12-23 13:20:16,634] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206677_R1_fastqc.html
+[2020-12-23 13:20:16,637] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219654_R2_fastqc.html
+[2020-12-23 13:20:16,639] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206667_R2_fastqc.html
+[2020-12-23 13:20:16,644] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206695_R1_fastqc.html
+[2020-12-23 13:20:16,644] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215003_R2_fastqc.html
+[2020-12-23 13:20:16,644] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219646_R1_fastqc.html
+[2020-12-23 13:20:16,649] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206659_R1_fastqc.html
+[2020-12-23 13:20:16,649] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206766_R2_fastqc.html
+[2020-12-23 13:20:16,650] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206704_R2_fastqc.html
+[2020-12-23 13:20:16,653] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206623_R2_fastqc.html
+[2020-12-23 13:20:16,655] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206750_R1_fastqc.html
+[2020-12-23 13:20:16,659] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215056_R2_fastqc.html
+[2020-12-23 13:20:16,660] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206740_R2_fastqc.html
+[2020-12-23 13:20:16,665] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.224326_R2_fastqc.html
+[2020-12-23 13:20:16,665] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206534_R1_fastqc.html
+[2020-12-23 13:20:16,665] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206615_R1_fastqc.html
+[2020-12-23 13:20:16,666] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215074_R2_fastqc.html
+[2020-12-23 13:20:16,666] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215048_R1_fastqc.html
+[2020-12-23 13:20:16,668] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206732_R1_fastqc.html
+[2020-12-23 13:20:16,668] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206570_R1_fastqc.html
+[2020-12-23 13:20:16,672] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206605_R2_fastqc.html
+[2020-12-23 13:20:16,674] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215084_R1_fastqc.html
+[2020-12-23 13:20:16,676] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206713_R2_fastqc.html
+[2020-12-23 13:20:16,681] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206723_R1_fastqc.html
+[2020-12-23 13:20:16,681] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206561_R1_fastqc.html
+[2020-12-23 13:20:16,681] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215075_R1_fastqc.html
+[2020-12-23 13:20:16,685] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206624_R1_fastqc.html
+[2020-12-23 13:20:16,686] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206731_R2_fastqc.html
+[2020-12-23 13:20:16,691] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215057_R1_fastqc.html
+[2020-12-23 13:20:16,692] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206660_R1_fastqc.html
+[2020-12-23 13:20:16,695] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206741_R1_fastqc.html
+[2020-12-23 13:20:16,696] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.224327_R1_fastqc.html
+[2020-12-23 13:20:16,698] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206614_R2_fastqc.html
+[2020-12-23 13:20:16,702] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206648_R1_fastqc.html
+[2020-12-23 13:20:16,702] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206729_R1_fastqc.html
+[2020-12-23 13:20:16,703] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206755_R2_fastqc.html
+[2020-12-23 13:20:16,706] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206684_R1_fastqc.html
+[2020-12-23 13:20:16,709] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206719_R2_fastqc.html
+[2020-12-23 13:20:16,711] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206747_R1_fastqc.html
+[2020-12-23 13:20:16,715] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219643_R2_fastqc.html
+[2020-12-23 13:20:16,717] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219653_R1_fastqc.html
+[2020-12-23 13:20:16,717] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206656_R2_fastqc.html
+[2020-12-23 13:20:16,717] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215010_R2_fastqc.html
+[2020-12-23 13:20:16,719] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206738_R1_fastqc.html
+[2020-12-23 13:20:16,719] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206683_R2_fastqc.html
+[2020-12-23 13:20:16,719] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206657_R1_fastqc.html
+[2020-12-23 13:20:16,719] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219634_R2_fastqc.html
+[2020-12-23 13:20:16,722] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206647_R2_fastqc.html
+[2020-12-23 13:20:16,722] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219670_R2_fastqc.html
+[2020-12-23 13:20:16,722] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219644_R1_fastqc.html
+[2020-12-23 13:20:16,723] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206728_R2_fastqc.html
+[2020-12-23 13:20:16,723] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206756_R1_fastqc.html
+[2020-12-23 13:20:16,723] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206675_R1_fastqc.html
+[2020-12-23 13:20:16,724] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.224845_R2_fastqc.html
+[2020-12-23 13:20:16,724] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219652_R2_fastqc.html
+[2020-12-23 13:20:16,725] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206629_R2_fastqc.html
+[2020-12-23 13:20:16,725] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206548_R2_fastqc.html
+[2020-12-23 13:20:16,726] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206746_R2_fastqc.html
+[2020-12-23 13:20:16,728] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206603_R2_fastqc.html
+[2020-12-23 13:20:16,728] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206730_R1_fastqc.html
+[2020-12-23 13:20:16,730] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206720_R2_fastqc.html
+[2020-12-23 13:20:16,730] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219669_R2_fastqc.html
+[2020-12-23 13:20:16,732] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206702_R2_fastqc.html
+[2020-12-23 13:20:16,734] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206621_R2_fastqc.html
+[2020-12-23 13:20:16,736] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206712_R1_fastqc.html
+[2020-12-23 13:20:16,736] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.224324_R2_fastqc.html
+[2020-12-23 13:20:16,737] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.224325_R1_fastqc.html
+[2020-12-23 13:20:16,739] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215009_R2_fastqc.html
+[2020-12-23 13:20:16,740] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206622_R1_fastqc.html
+[2020-12-23 13:20:16,741] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206703_R1_fastqc.html
+[2020-12-23 13:20:16,741] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215055_R1_fastqc.html
+[2020-12-23 13:20:16,742] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206604_R1_fastqc.html
+[2020-12-23 13:20:16,743] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206630_R2_fastqc.html
+[2020-12-23 13:20:16,743] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206711_R2_fastqc.html
+[2020-12-23 13:20:16,744] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206721_R1_fastqc.html
+[2020-12-23 13:20:16,746] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.222170_R1_fastqc.html
+[2020-12-23 13:20:16,746] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206769_R1_fastqc.html
+[2020-12-23 13:20:16,746] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206678_R2_fastqc.html
+[2020-12-23 13:20:16,747] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219675_R1_fastqc.html
+[2020-12-23 13:20:16,747] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.214994_R2_fastqc.html
+[2020-12-23 13:20:16,747] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219657_R1_fastqc.html
+[2020-12-23 13:20:16,748] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.224330_R1_fastqc.html
+[2020-12-23 13:20:16,749] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219693_R1_fastqc.html
+[2020-12-23 13:20:16,749] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215050_R2_fastqc.html
+[2020-12-23 13:20:16,751] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219638_R2_fastqc.html
+[2020-12-23 13:20:16,751] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.214995_R1_fastqc.html
+[2020-12-23 13:20:16,753] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206768_R2_fastqc.html
+[2020-12-23 13:20:16,755] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219692_R2_fastqc.html
+[2020-12-23 13:20:16,755] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206669_R2_fastqc.html
+[2020-12-23 13:20:16,755] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215023_R2_fastqc.html
+[2020-12-23 13:20:16,756] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.219656_R2_fastqc.html
+[2020-12-23 13:20:16,757] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206562_R2_fastqc.html
+[2020-12-23 13:20:16,758] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206724_R2_fastqc.html
+[2020-12-23 13:20:16,758] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206536_R1_fastqc.html
+[2020-12-23 13:20:16,759] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206643_R2_fastqc.html
+[2020-12-23 13:20:16,759] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206617_R1_fastqc.html
+[2020-12-23 13:20:16,760] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206770_R1_fastqc.html
+[2020-12-23 13:20:16,760] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215076_R2_fastqc.html
+[2020-12-23 13:20:16,760] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206734_R1_fastqc.html
+[2020-12-23 13:20:16,760] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206572_R1_fastqc.html
+[2020-12-23 13:20:16,764] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206742_R2_fastqc.html
+[2020-12-23 13:20:16,765] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206635_R1_fastqc.html
+[2020-12-23 13:20:16,767] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.224328_R2_fastqc.html
+[2020-12-23 13:20:16,767] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206752_R1_fastqc.html
+[2020-12-23 13:20:16,767] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206671_R1_fastqc.html
+[2020-12-23 13:20:16,767] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215058_R2_fastqc.html
+[2020-12-23 13:20:16,768] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206625_R2_fastqc.html
+[2020-12-23 13:20:16,769] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206626_R1_fastqc.html
+[2020-12-23 13:20:16,769] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206733_R2_fastqc.html
+[2020-12-23 13:20:16,769] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206571_R2_fastqc.html
+[2020-12-23 13:20:16,769] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215085_R2_fastqc.html
+[2020-12-23 13:20:16,770] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215049_R2_fastqc.html
+[2020-12-23 13:20:16,770] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206743_R1_fastqc.html
+[2020-12-23 13:20:16,772] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206616_R2_fastqc.html
+[2020-12-23 13:20:16,773] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206644_R1_fastqc.html
+[2020-12-23 13:20:16,773] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206670_R2_fastqc.html
+[2020-12-23 13:20:16,774] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206725_R1_fastqc.html
+[2020-12-23 13:20:16,774] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206751_R2_fastqc.html
+[2020-12-23 13:20:16,774] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206563_R1_fastqc.html
+[2020-12-23 13:20:16,775] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215077_R1_fastqc.html
+[2020-12-23 13:20:16,776] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.215067_R2_fastqc.html
+[2020-12-23 13:20:16,776] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206761_R1_fastqc.html
+[2020-12-23 13:20:16,779] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HMP.2.206608_R1_fastqc.html
+[2020-12-23 13:20:22,782] multiqc.modules.fastqc.fastqc                      [INFO   ]  Found 356 reports
+[2020-12-23 13:20:46,098] multiqc                                            [DEBUG  ]  No samples found: cutadapt
+[2020-12-23 13:20:46,135] multiqc.modules.trimmomatic.trimmomatic            [INFO   ]  Found 178 logs
+[2020-12-23 13:20:51,554] multiqc                                            [DEBUG  ]  No samples found: custom_content
+[2020-12-23 13:20:51,561] multiqc                                            [DEBUG  ]  No samples found: conpair
+[2020-12-23 13:20:51,691] multiqc                                            [DEBUG  ]  No samples found: peddy
+[2020-12-23 13:20:51,696] multiqc                                            [DEBUG  ]  No samples found: methylQA
+[2020-12-23 13:20:51,701] multiqc                                            [DEBUG  ]  No samples found: phantompeakqualtools
+[2020-12-23 13:20:51,707] multiqc                                            [DEBUG  ]  No samples found: qualimap
+[2020-12-23 13:20:51,712] multiqc                                            [DEBUG  ]  No samples found: preseq
+[2020-12-23 13:20:51,717] multiqc                                            [DEBUG  ]  No samples found: quast
+[2020-12-23 13:20:51,722] multiqc                                            [DEBUG  ]  No samples found: qorts
+[2020-12-23 13:20:51,727] multiqc                                            [DEBUG  ]  No samples found: rna_seqc
+[2020-12-23 13:20:51,732] multiqc                                            [DEBUG  ]  No samples found: rsem
+[2020-12-23 13:20:51,740] multiqc                                            [DEBUG  ]  No samples found: rseqc
+[2020-12-23 13:20:51,746] multiqc                                            [DEBUG  ]  No samples found: busco
+[2020-12-23 13:20:51,751] multiqc                                            [DEBUG  ]  No samples found: goleft_indexcov
+[2020-12-23 13:20:51,756] multiqc                                            [DEBUG  ]  No samples found: disambiguate
+[2020-12-23 13:20:51,761] multiqc                                            [DEBUG  ]  No samples found: supernova
+[2020-12-23 13:20:51,771] multiqc                                            [DEBUG  ]  No samples found: deeptools
+[2020-12-23 13:20:51,776] multiqc                                            [DEBUG  ]  No samples found: sargasso
+[2020-12-23 13:20:51,783] multiqc                                            [DEBUG  ]  No samples found: verifybamid
+[2020-12-23 13:20:51,788] multiqc                                            [DEBUG  ]  No samples found: mirtrace
+[2020-12-23 13:20:51,793] multiqc                                            [DEBUG  ]  No samples found: happy
+[2020-12-23 13:20:51,799] multiqc                                            [DEBUG  ]  No samples found: homer
+[2020-12-23 13:20:51,804] multiqc                                            [DEBUG  ]  No samples found: macs2
+[2020-12-23 13:20:51,809] multiqc                                            [DEBUG  ]  No samples found: theta2
+[2020-12-23 13:20:51,814] multiqc                                            [DEBUG  ]  No samples found: snpeff
+[2020-12-23 13:20:51,821] multiqc                                            [DEBUG  ]  No samples found: gatk
+[2020-12-23 13:20:51,827] multiqc                                            [DEBUG  ]  No samples found: htseq
+[2020-12-23 13:20:51,832] multiqc                                            [DEBUG  ]  No samples found: bcftools
+[2020-12-23 13:20:51,838] multiqc                                            [DEBUG  ]  No samples found: featureCounts
+[2020-12-23 13:20:51,843] multiqc                                            [DEBUG  ]  No samples found: dedup
+[2020-12-23 13:20:51,849] multiqc                                            [DEBUG  ]  No samples found: damageprofiler
+[2020-12-23 13:20:51,863] multiqc                                            [DEBUG  ]  No samples found: biobambam2
+[2020-12-23 13:20:51,866] multiqc                                            [DEBUG  ]  No samples found: picard
+[2020-12-23 13:20:51,871] multiqc                                            [DEBUG  ]  No samples found: prokka
+[2020-12-23 13:20:51,877] multiqc                                            [DEBUG  ]  No samples found: samblaster
+[2020-12-23 13:20:51,884] multiqc                                            [DEBUG  ]  No samples found: samtools
+[2020-12-23 13:20:51,890] multiqc                                            [DEBUG  ]  No samples found: bamtools
+[2020-12-23 13:20:51,895] multiqc                                            [DEBUG  ]  No samples found: jellyfish
+[2020-12-23 13:20:51,902] multiqc                                            [DEBUG  ]  No samples found: vcftools
+[2020-12-23 13:20:51,907] multiqc                                            [DEBUG  ]  No samples found: longranger
+[2020-12-23 13:20:51,912] multiqc                                            [DEBUG  ]  No samples found: stacks
+[2020-12-23 13:20:51,924] multiqc                                            [DEBUG  ]  No samples found: bbmap
+[2020-12-23 13:20:51,929] multiqc                                            [DEBUG  ]  No samples found: bismark
+[2020-12-23 13:20:51,935] multiqc                                            [DEBUG  ]  No samples found: biscuit
+[2020-12-23 13:20:51,940] multiqc                                            [DEBUG  ]  No samples found: hicexplorer
+[2020-12-23 13:20:51,945] multiqc                                            [DEBUG  ]  No samples found: hicup
+[2020-12-23 13:20:51,950] multiqc                                            [DEBUG  ]  No samples found: hicpro
+[2020-12-23 13:20:51,956] multiqc                                            [DEBUG  ]  No samples found: salmon
+[2020-12-23 13:20:51,960] multiqc                                            [DEBUG  ]  No samples found: kallisto
+[2020-12-23 13:20:51,966] multiqc                                            [DEBUG  ]  No samples found: slamdunk
+[2020-12-23 13:20:51,971] multiqc                                            [DEBUG  ]  No samples found: star
+[2020-12-23 13:20:51,976] multiqc                                            [DEBUG  ]  No samples found: hisat2
+[2020-12-23 13:20:51,981] multiqc                                            [DEBUG  ]  No samples found: tophat
+[2020-12-23 13:20:51,986] multiqc                                            [DEBUG  ]  No samples found: bowtie2
+[2020-12-23 13:20:51,991] multiqc                                            [DEBUG  ]  No samples found: bowtie1
+[2020-12-23 13:20:51,996] multiqc                                            [DEBUG  ]  No samples found: kat
+[2020-12-23 13:20:52,001] multiqc                                            [DEBUG  ]  No samples found: leehom
+[2020-12-23 13:20:52,006] multiqc                                            [DEBUG  ]  No samples found: adapterRemoval
+[2020-12-23 13:20:52,012] multiqc                                            [DEBUG  ]  No samples found: clipandmerge
+[2020-12-23 13:20:52,017] multiqc                                            [DEBUG  ]  No samples found: flexbar
+[2020-12-23 13:20:52,023] multiqc                                            [DEBUG  ]  No samples found: skewer
+[2020-12-23 13:20:52,028] multiqc                                            [DEBUG  ]  No samples found: sortmerna
+[2020-12-23 13:20:52,033] multiqc                                            [DEBUG  ]  No samples found: biobloomtools
+[2020-12-23 13:20:52,039] multiqc                                            [DEBUG  ]  No samples found: fastq_screen
+[2020-12-23 13:20:52,045] multiqc                                            [DEBUG  ]  No samples found: afterqc
+[2020-12-23 13:20:52,051] multiqc                                            [DEBUG  ]  No samples found: fastp
+[2020-12-23 13:20:52,056] multiqc                                            [DEBUG  ]  No samples found: minionqc
+[2020-12-23 13:20:52,061] multiqc                                            [DEBUG  ]  No samples found: clusterflow
+[2020-12-23 13:20:52,067] multiqc                                            [DEBUG  ]  No samples found: bcl2fastq
+[2020-12-23 13:20:52,072] multiqc                                            [DEBUG  ]  No samples found: interop
+[2020-12-23 13:20:52,110] multiqc.modules.flash.flash                        [INFO   ]  Found 178 log reports
+[2020-12-23 13:20:58,709] multiqc.modules.flash.flash                        [INFO   ]  Found 178 histogram reports
+[2020-12-23 13:21:00,124] multiqc.plots.table                                [DEBUG  ]  Plotting beeswarm instead of table, 534 samples
+[2020-12-23 13:21:00,146] multiqc                                            [INFO   ]  Compressing plot data
+[2020-12-23 13:21:00,310] multiqc                                            [INFO   ]  Report      : ../../../mnt/EFS/user_uploads/85969ccb2135/outputs/QC_HMP_IBD_QualityTrimmingDefault_MergeReadPairsDefault_trial1_multiqc_report.html
+[2020-12-23 13:21:00,310] multiqc                                            [INFO   ]  Data        : ../../../mnt/EFS/user_uploads/85969ccb2135/outputs/QC_HMP_IBD_QualityTrimmingDefault_MergeReadPairsDefault_trial1_multiqc_report_data
+[2020-12-23 13:21:00,321] multiqc                                            [DEBUG  ]  Moving data file from '/mnt/EFS/user_uploads/85969ccb2135/tmp/tmphlwmq0hh/multiqc_data/multiqc_data.json' to '/mnt/EFS/user_uploads/85969ccb2135/outputs/QC_HMP_IBD_QualityTrimmingDefault_MergeReadPairsDefault_trial1_multiqc_report_data'
+[2020-12-23 13:21:00,330] multiqc                                            [DEBUG  ]  Moving data file from '/mnt/EFS/user_uploads/85969ccb2135/tmp/tmphlwmq0hh/multiqc_data/multiqc_sources.txt' to '/mnt/EFS/user_uploads/85969ccb2135/outputs/QC_HMP_IBD_QualityTrimmingDefault_MergeReadPairsDefault_trial1_multiqc_report_data'
+[2020-12-23 13:21:00,341] multiqc                                            [DEBUG  ]  Moving data file from '/mnt/EFS/user_uploads/85969ccb2135/tmp/tmphlwmq0hh/multiqc_data/mqc_fastqc_per_sequence_quality_scores_plot_1.txt' to '/mnt/EFS/user_uploads/85969ccb2135/outputs/QC_HMP_IBD_QualityTrimmingDefault_MergeReadPairsDefault_trial1_multiqc_report_data'
+[2020-12-23 13:21:00,348] multiqc                                            [DEBUG  ]  Moving data file from '/mnt/EFS/user_uploads/85969ccb2135/tmp/tmphlwmq0hh/multiqc_data/multiqc_trimmomatic.txt' to '/mnt/EFS/user_uploads/85969ccb2135/outputs/QC_HMP_IBD_QualityTrimmingDefault_MergeReadPairsDefault_trial1_multiqc_report_data'
+[2020-12-23 13:21:00,358] multiqc                                            [DEBUG  ]  Moving data file from '/mnt/EFS/user_uploads/85969ccb2135/tmp/tmphlwmq0hh/multiqc_data/mqc_trimmomatic_plot_1.txt' to '/mnt/EFS/user_uploads/85969ccb2135/outputs/QC_HMP_IBD_QualityTrimmingDefault_MergeReadPairsDefault_trial1_multiqc_report_data'
+[2020-12-23 13:21:00,367] multiqc                                            [DEBUG  ]  Moving data file from '/mnt/EFS/user_uploads/85969ccb2135/tmp/tmphlwmq0hh/multiqc_data/mqc_fastqc_per_sequence_gc_content_plot_Counts.txt' to '/mnt/EFS/user_uploads/85969ccb2135/outputs/QC_HMP_IBD_QualityTrimmingDefault_MergeReadPairsDefault_trial1_multiqc_report_data'
+[2020-12-23 13:21:00,377] multiqc                                            [DEBUG  ]  Moving data file from '/mnt/EFS/user_uploads/85969ccb2135/tmp/tmphlwmq0hh/multiqc_data/mqc_flash_freqpoly_plot_Relative.txt' to '/mnt/EFS/user_uploads/85969ccb2135/outputs/QC_HMP_IBD_QualityTrimmingDefault_MergeReadPairsDefault_trial1_multiqc_report_data'
+[2020-12-23 13:21:00,386] multiqc                                            [DEBUG  ]  Moving data file from '/mnt/EFS/user_uploads/85969ccb2135/tmp/tmphlwmq0hh/multiqc_data/mqc_fastqc_per_base_sequence_quality_plot_1.txt' to '/mnt/EFS/user_uploads/85969ccb2135/outputs/QC_HMP_IBD_QualityTrimmingDefault_MergeReadPairsDefault_trial1_multiqc_report_data'
+[2020-12-23 13:21:00,396] multiqc                                            [DEBUG  ]  Moving data file from '/mnt/EFS/user_uploads/85969ccb2135/tmp/tmphlwmq0hh/multiqc_data/mqc_fastqc_overrepresented_sequencesi_plot_1.txt' to '/mnt/EFS/user_uploads/85969ccb2135/outputs/QC_HMP_IBD_QualityTrimmingDefault_MergeReadPairsDefault_trial1_multiqc_report_data'
+[2020-12-23 13:21:00,405] multiqc                                            [DEBUG  ]  Moving data file from '/mnt/EFS/user_uploads/85969ccb2135/tmp/tmphlwmq0hh/multiqc_data/multiqc_fastqc.txt' to '/mnt/EFS/user_uploads/85969ccb2135/outputs/QC_HMP_IBD_QualityTrimmingDefault_MergeReadPairsDefault_trial1_multiqc_report_data'
+[2020-12-23 13:21:00,414] multiqc                                            [DEBUG  ]  Moving data file from '/mnt/EFS/user_uploads/85969ccb2135/tmp/tmphlwmq0hh/multiqc_data/mqc_fastqc_sequence_counts_plot_1.txt' to '/mnt/EFS/user_uploads/85969ccb2135/outputs/QC_HMP_IBD_QualityTrimmingDefault_MergeReadPairsDefault_trial1_multiqc_report_data'
+[2020-12-23 13:21:00,424] multiqc                                            [DEBUG  ]  Moving data file from '/mnt/EFS/user_uploads/85969ccb2135/tmp/tmphlwmq0hh/multiqc_data/mqc_flash_freqpoly_plot_Absolute.txt' to '/mnt/EFS/user_uploads/85969ccb2135/outputs/QC_HMP_IBD_QualityTrimmingDefault_MergeReadPairsDefault_trial1_multiqc_report_data'
+[2020-12-23 13:21:00,432] multiqc                                            [DEBUG  ]  Moving data file from '/mnt/EFS/user_uploads/85969ccb2135/tmp/tmphlwmq0hh/multiqc_data/mqc_fastqc_per_base_n_content_plot_1.txt' to '/mnt/EFS/user_uploads/85969ccb2135/outputs/QC_HMP_IBD_QualityTrimmingDefault_MergeReadPairsDefault_trial1_multiqc_report_data'
+[2020-12-23 13:21:00,442] multiqc                                            [DEBUG  ]  Moving data file from '/mnt/EFS/user_uploads/85969ccb2135/tmp/tmphlwmq0hh/multiqc_data/mqc_fastqc_sequence_duplication_levels_plot_1.txt' to '/mnt/EFS/user_uploads/85969ccb2135/outputs/QC_HMP_IBD_QualityTrimmingDefault_MergeReadPairsDefault_trial1_multiqc_report_data'
+[2020-12-23 13:21:00,451] multiqc                                            [DEBUG  ]  Moving data file from '/mnt/EFS/user_uploads/85969ccb2135/tmp/tmphlwmq0hh/multiqc_data/multiqc_flash_combo_stats.txt' to '/mnt/EFS/user_uploads/85969ccb2135/outputs/QC_HMP_IBD_QualityTrimmingDefault_MergeReadPairsDefault_trial1_multiqc_report_data'
+[2020-12-23 13:21:00,460] multiqc                                            [DEBUG  ]  Moving data file from '/mnt/EFS/user_uploads/85969ccb2135/tmp/tmphlwmq0hh/multiqc_data/mqc_flash_combo_stats_plot_1.txt' to '/mnt/EFS/user_uploads/85969ccb2135/outputs/QC_HMP_IBD_QualityTrimmingDefault_MergeReadPairsDefault_trial1_multiqc_report_data'
+[2020-12-23 13:21:00,469] multiqc                                            [DEBUG  ]  Moving data file from '/mnt/EFS/user_uploads/85969ccb2135/tmp/tmphlwmq0hh/multiqc_data/mqc_fastqc_per_sequence_gc_content_plot_Percentages.txt' to '/mnt/EFS/user_uploads/85969ccb2135/outputs/QC_HMP_IBD_QualityTrimmingDefault_MergeReadPairsDefault_trial1_multiqc_report_data'
+[2020-12-23 13:21:03,215] multiqc                                            [INFO   ]  MultiQC complete
