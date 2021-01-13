@@ -1,0 +1,14 @@
+Nephele Version: 2.5.0
+Run Type: mothur 16S FASTQ Paired End
+Pipeline Description: HMP_IBD178samples_trial2_Mothur_Silva99_PiCRUStannot
+Job ID: 163a091d878b
+Pipeline parameters:
+criteria : 90
+data_type : PE
+job_id : 163a091d878b
+map_file : /mnt/EFS/user_uploads/163a091d878b/inputs/hmp2_metadata_modified_IBD_Nephele_corrected.txt
+maxlength : 0
+optimize : start-end
+picrust : True
+ref_db : sv99
+remove_lineage : unknown-Chloroplast-Mitochondria-Eukaryote
