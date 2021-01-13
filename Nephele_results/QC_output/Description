@@ -1,0 +1,31 @@
+This folder contains the multiQC summary for QC pipleine (trimmed and quality filtered sequence files not included)
+
+Parameters-
+
+Nephele Version: 2.5.0
+Run Type: Paired End QC
+Pipeline Description: QC_HMP_IBD_QualityTrimmingDefault_MergeReadPairsDefault_trial1
+Job ID: 85969ccb2135
+Pipeline parameters:
+avg_qual : 0
+data_type : QC_PE
+error_rate : 0.2
+f2_max_mismatch_density : 0.25
+f2_max_overlap : 315
+f2_min_overlap : 10
+f2_min_overlap_outie : 35
+indels : True
+job_id : 85969ccb2135
+lead_qual : 3
+map_file : /mnt/EFS/user_uploads/85969ccb2135/inputs/hmp2_metadata_modified_IBD_Nephele_corrected.txt
+match_adapter_wildcards : True
+match_read_wildcards : True
+minlen : 30
+overlap : 3
+req_qual : 12
+run_cutadapt : False
+run_flash2_merge : True
+run_qual_trimming : True
+trail_qual : 3
+window_size : 4
+
